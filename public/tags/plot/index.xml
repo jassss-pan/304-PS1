@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plot on Min&#39;s 304 PS1 website</title>
+    <link>/tags/plot/</link>
+    <description>Recent content in plot on Min&#39;s 304 PS1 website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Sep 2020 21:13:14 -0500</lastBuildDate><atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Min&#39;s 304 PS1</title>
+      <link>/2020/09/25/mins-304-ps1/</link>
+      <pubDate>Fri, 25 Sep 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/2020/09/25/mins-304-ps1/</guid>
+      <description>Abstraction  Introduction  Data introduction introduce the scenario and study objectives types of data variable.
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.</description>
+    </item>
+    
+  </channel>
+</rss>
