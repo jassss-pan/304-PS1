@@ -1,12 +1,78 @@
----
-title: "Neighbourhood crime rate and its' relationship with politics "
-author: "Minhui Pan"
-date: 2020-09-24T21:13:14-05:00
-bibliography: "references.bib"
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
----
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
 
+
+<title>Neighbourhood crime rate and its&#39; relationship with politics  - Min&#39;s 304 PS1 website</title>
+<meta property="og:title" content="Neighbourhood crime rate and its&#39; relationship with politics  - Min&#39;s 304 PS1 website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">16 min read</span>
+    
+
+    <h1 class="article-title">Neighbourhood crime rate and its&#39; relationship with politics </h1>
+
+    
+    <span class="article-date">2020-09-24</span>
+    
+
+    <div class="article-content">
+      
 
 
 <div id="part-i.-abstraction" class="section level1">
@@ -301,7 +367,7 @@ data</code></pre>
 ##  3rd Qu.:11900                      
 ##  Max.   :43081</code></pre>
 <pre class="r"><code>ggplot(data=data,aes(x = Neighbourhood, y= Population)) + geom_bar(stat=&#39;identity&#39;, position=position_dodge(), width = 1, size=0.25, colour = &quot;pink&quot;)</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <pre class="r"><code>target &lt;- c(&quot;Woburn&quot;,&quot;Danforth&quot;,&quot;Ionview&quot;)
 filter(data, Neighbourhood%in% target)</code></pre>
 <pre><code>## Simple feature collection with 3 features and 61 fields
@@ -340,19 +406,19 @@ View(data2)</code></pre>
 <pre><code>## Warning in View(data2): unable to open display</code></pre>
 <pre><code>## Error in .External2(C_dataviewer, x, title): unable to start data viewer</code></pre>
 <pre class="r"><code>ggplot(data=data2,aes(x=Year,y=Rate))+geom_bar(stat = &quot;identity&quot;,width = 0.5, size=0.25)+geom_line()</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <pre class="r"><code>data1&lt;- read.xlsx(&quot;Book1.xlsx&quot;, sheet = 1)
 View(data1)</code></pre>
 <pre><code>## Warning in View(data1): unable to open display</code></pre>
 <pre><code>## Error in .External2(C_dataviewer, x, title): unable to start data viewer</code></pre>
 <pre class="r"><code>ggplot(data=data1,aes(x=Year,y=Rates))+geom_bar(stat = &quot;identity&quot;,width = 0.5, size=0.25)+geom_line()</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
 <pre class="r"><code>data3&lt;- read.xlsx(&quot;Book3.xlsx&quot;, sheet = 1)
 View(data3)</code></pre>
 <pre><code>## Warning in View(data3): unable to open display</code></pre>
 <pre><code>## Error in .External2(C_dataviewer, x, title): unable to start data viewer</code></pre>
 <pre class="r"><code>ggplot(data=data3,aes(x=Year,y=Rates))+geom_bar(stat = &quot;identity&quot;,width = 0.5, size=0.25)+geom_line()</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-10-3.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-10-3.png" width="672" /></p>
 <p>###Reference
 - Hadley Wickham, Jim Hester and Winston Chang (2020). devtools: Tools
 to Make Developing R Packages Easier. R package version 2.3.1.
@@ -370,3 +436,44 @@ Open Data Portal. R package version 0.1.3.
 <a href="https://CRAN.R-project.org/package=opendatatoronto" class="uri">https://CRAN.R-project.org/package=opendatatoronto</a></p></li>
 </ul>
 </div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
